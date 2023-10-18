@@ -1,0 +1,65 @@
+.testForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.answers {
+  border: 2px solid #cf2e2e;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  cursor: pointer;
+  min-width: 40%;
+  max-width: 300px;
+}
+
+.answers:hover {
+  background-color: #cf2e2e;
+  color: white;
+  border: 2px solid #cf2e2e;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 20px;
+  color: black;
+  font-weight: bold;
+}
+
+.pyetja {
+  margin-top: 30px;
+}
+
+span {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.language {
+  width: 100px;
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.language img {
+  width: 40;
+  height: 40;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .answers:hover {
+    background-color: unset;
+    color: unset;
+  }
+  .answers:active {
+    background-color: #cf2e2e;
+    color: white;
+  }
+}
